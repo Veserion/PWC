@@ -5,6 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Router } from "react-router-dom";
 import { RootStore, storesContext } from "@stores";
+import "antd/dist/antd.css";
 
 const mobxStore = new RootStore();
 

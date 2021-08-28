@@ -9,6 +9,7 @@
     "classnames": "^2.2.6",
     "mobx": "^5.15.6",
     "mobx-react-lite": "^2.2.0",
+    "moment": "^2.29.1",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
