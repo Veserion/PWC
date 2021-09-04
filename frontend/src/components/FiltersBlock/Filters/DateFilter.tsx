@@ -9,7 +9,8 @@ type pickerType = 'month' | 'week'
 
 export type IDateRange = {
     type: pickerType,
-    value: number
+    value: number,
+    year: number
 }
 
 type IRawDateRange = {
@@ -32,11 +33,11 @@ export const DateFilter: React.FC<IProps> = (props) => {
         const {value, type} = x
         if (type === 'week') {
             if (!!value) console.log(value.week())
-            if (!!value) props.handler({type, value: value.week()})
+            if (!!value) props.handler({type, value: value.week(), year: value.year()})
         }
         if (type === 'month') {
             if (!!value) console.log(value.month())
-            if (!!value) props.handler({type, value: value.month()})
+            if (!!value) props.handler({type, value: value.month(), year: value.year()})
         }
     }
 
